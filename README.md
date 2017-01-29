@@ -7,6 +7,9 @@ Author: Manuel Gonzalez <mgonyan@gmail.com>
 - node
 - npm
 - mocha
+- prime-generator (Only for testing)
+- test-console
+
 
 ## Run test
 
