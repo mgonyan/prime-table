@@ -5,8 +5,8 @@ const Table = require('../index');
 const stdout = require("test-console").stdout;
 
 function testPrimeTable(primes, result) {
-  let inspect = stdout.inspect();
   const table = new Table();
+  let inspect = stdout.inspect();
   table.printMultiplication(primes);
   inspect.restore();
   expect(inspect.output.join('')).toEqual(result);
