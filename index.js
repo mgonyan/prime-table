@@ -1,5 +1,9 @@
 'use strict';
 
-module.exports = (primes) => {
-  // implementation
+module.exports = Table;
+
+function Table() {};
+
+Table.prototype.printMultiplication = function printMultiplication(values) {
+
 };
