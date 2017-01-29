@@ -43,6 +43,7 @@ $> node index.js [N]
 - Add library to print table
 - Add more efficient algorithm to perform the primality check
 - Add performance stats between algorithm
+- Add a docker machine
 
 ## Author
 
