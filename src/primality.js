@@ -1,39 +1,23 @@
 'use strict';
 
-/**
- * Performs a check to determine if a number is prime
- *
- * @param {Number} number
- * @return {boolean}
- */
-module.exports = (number = 0) => {
-  if (number <= 1) {
-    return false;
-  } else if (number <= 3) {
-    return true;
-  } else if (divisibleBy(number, 2) || divisibleBy(number, 3)) {
-    return false;
+const algorithms = require('./algorithm/primalityAlgorithms');
+
+module.exports = Primality;
+
+function Primality(algorithm = algorithms.SIMPLE_METHOD) {
+  if (algorithm === algorithms.SQUARE_ROOT_METHOD) {
+    this.isPrime = require('./algorithm/squareRootDeterministic');
+  } else {
+    this.isPrime = require('./algorithm/simpleDeterministic');
   }
-
-  let index = 5;
-  while (index * index <= number) {
-    if (divisibleBy(number, index) || divisibleBy(number, index + 2)) {
-      return false;
-    }
-
-    index += 6;
-  }
-
-  return true;
 };
 
 /**
- * Check if number/divisor = 0
+ * Simple implementation base on https://en.wikipedia.org/wiki/Primality_test
+ * [Deterministic]
  *
- * @param {number} number
- * @param {number} divisor
- * @return {boolean}
+ * @return {function(*=)}
  */
-function divisibleBy(number, divisor) {
-  return (number % divisor === 0);
-}
+Primality.prototype.isPrime = (number) => {
+  return this.isPrime(number);
+};
