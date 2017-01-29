@@ -1,7 +1,7 @@
 'use strict';
 
 const expect = require('expect');
-const Table = require('../index');
+const Table = require('../src/table');
 const stdout = require("test-console").stdout;
 
 function testPrimeTable(primes, result) {
