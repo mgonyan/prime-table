@@ -4,6 +4,12 @@ const algorithms = require('./algorithm/primalityAlgorithms');
 
 module.exports = Primality;
 
+/**
+ * Primality check prime test
+ *
+ * @param {String} algorithm
+ * @constructor
+ */
 function Primality(algorithm = algorithms.SIMPLE_METHOD) {
   if (algorithm === algorithms.SQUARE_ROOT_METHOD) {
     this.isPrime = require('./algorithm/squareRootDeterministic');

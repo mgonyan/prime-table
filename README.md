@@ -41,6 +41,7 @@ $> node index.js [N]
 ## Future improvement
 
 - Add library to print table
+- Add Strategy pattern for different algorithm
 - Add more efficient algorithm to perform the primality check
 - Add performance stats between algorithm
 - Add a docker machine
