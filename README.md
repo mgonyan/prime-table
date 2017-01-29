@@ -1,5 +1,7 @@
 # Prime table
 
+[![Build Status](https://travis-ci.org/mgonyan/prime-table.svg)](https://travis-ci.org/mgonyan/prime-table)
+
 Takes numeric input (N) from a user and outputs a multiplication table of (N) prime numbers.
 
 ```sh
