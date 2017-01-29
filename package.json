@@ -13,5 +13,8 @@
     "expect": "^1.20.2",
     "mocha": "^3.2.0",
     "prime-generator": "^1.0.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
   }
 }
